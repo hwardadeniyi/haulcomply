@@ -1,12 +1,25 @@
 {
   "name": "haulcomply-api",
   "version": "1.0.0",
-  "description": "HaulComply DOT Compliance API",
+  "private": true,
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "node server.js",
+    "start": "node server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
   },
   "dependencies": {
-    "fastify": "^4.25.0"
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@aws-sdk/s3-request-presigner": "^3.600.0",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/jwt": "^8.0.0",
+    "@fastify/multipart": "^8.3.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.27.0",
+    "node-cron": "^3.0.3",
+    "prisma": "^5.19.1",
+    "@prisma/client": "^5.19.1",
+    "zod": "^3.23.8"
   }
 }
