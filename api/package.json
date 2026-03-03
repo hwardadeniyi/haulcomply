@@ -1,0 +1,12 @@
+{
+  "name": "haulcomply-api",
+  "version": "1.0.0",
+  "description": "HaulComply DOT Compliance API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.25.0"
+  }
+}
